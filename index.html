@@ -40,7 +40,17 @@
   // TODO: Sort the names in alphabetical order
   // TODO: remove every name starting with the letter J
 
-  document.getElementById('result').innerHTML = names;
+  names.sort();
+  var index = 0; 
+  var i = 0;
+  const namesNoJ=[];
+  for(i =0; i < names.length; i++){
+    if(names[i].charAt(0) !== 'J'){
+      namesNoJ.push(names[i]);
+    }
+  }
+
+  document.getElementById('result').innerHTML = namesNoJ;
   // EXTRA-TODO: If you are done you can display the names in a fancy way or do something else 😃
 </script>
 </html>
