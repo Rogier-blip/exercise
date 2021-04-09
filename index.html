@@ -7,12 +7,14 @@
 </head>
 
 <body>
+  <marquee><font color="red"><blink>HELLLO</blink></font></marquee>
   <div id="result"></div>
 </body>
 
 <script>
   const names = [
     'Jeanette Letendre',
+    'Gordon Freeman',
     'Penni Herzog',
     'Porfirio Ottley',
     'Karleen Whitelow',
@@ -31,17 +33,24 @@
     'Julianne Oconnell',  
     'Julieann Richert',  
     'Chet Herter',  
-    'Dorene Prestwood'
+    'Dorene Prestwood',
+    'Mathijs Groothuis',
+    'Pete Snot'
   ];
 
   // TODO: Sort the names in alphabetical order
   // TODO: remove every name starting with the letter J
 
+<<<<<<< HEAD
   var names_out = names.filter(element => {
     element[0] != 'J'
   });
   names_out.sort();
 
   document.getElementById('result').innerHTML = names_out;
+=======
+  document.getElementById('result').innerHTML = names;
+  // EXTRA-TODO: If you are done you can display the names in a fancy way or do something else 😃
+>>>>>>> 19d6cd9bfbee81f3ff5a0e447fabc51cd4e962ae
 </script>
 </html>
