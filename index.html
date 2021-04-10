@@ -38,7 +38,9 @@
   ];
 
   // TODO: Sort the names in alphabetical order
+  names.sort();
   // TODO: remove every name starting with the letter J
+  names = names.filter(name => !(name[0] === 'J'));
 
   names.sort();
   var index = 0; 
